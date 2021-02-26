@@ -2,13 +2,132 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title><KURSIFIK-TE</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+<header>
+  <div>
+    <h1>KURSIFIK-TE</h1>
+  </div>
+  <i class="fas fa-shopping-cart"></i>
+</header>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <main>
+      <!-- Formulario validación -->
+    <form action=""class="validacionTarjeta" id="validacionTarjeta">
+      <!--Número de tarjeta -->
+      <div class="grupoTarjeta" id="grupoTarjeta">
+      <label for="inputNumero"Class="inputNumero">Número de Tarjeta</label>
+      </br>
+        <i class="fas fa-credit-card"></i>
+      <input type="text" class="inputNumero" id="inputNumero" name="números" required="" pattern="[0-9]+"placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off">
+      </br>
+      <div>
+         <p class="validacióntarjeta_input-error">Sólo números de 16 dígitos  no acepta letras ni caracteres especiales</p>
+         <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Tarjeta no válida</p>
+     </div>
+
+     <!-- Nombre y Apellido  -->
+     <div class="grupoTarjeta" id="grupoTarjeta"> 
+       <label for="inputNombre" Class="inputNombre"">Nombre y Apellido que figura en su tarjeta</label>
+       <input type="text" class="inputNombre"pattern="[a-zA-Z]+ name="nombre_apellido" id="inputNombre" placeholder="Carlos Perez" autocomplete="off">
+       <div>
+         <p class="nombre y apellido_input-error">Sólo letras no acepta números ni caracteres especiales</p>
+     </div>
+     
+    <!--Número de Cuotas -->
+     <div class="grupoCuotas" id="grupoCuotas"> 
+       <label for="inputCuotas" Class="inputCuotas">Número de Cuotas</label>
+       <div class="selectCuotas"> 
+       <select name="selectCuotas"class="selectCuotas">
+      <option value="1">Total</option>
+      <option value="1">2 cuotas</option>
+      <option value="2">3 cuotas</option>
+      <option value="3">4 cuotas</option>
+      <option value="4">5 cuotas</option>
+      <option value="5">6 cuotas</option>
+      <option value="6">7 cuotas</option>
+      <option value="7">8 cuotas</option>
+      <option value="8">9 cuotas</option>
+      <option value="9">10 cuotas</option>
+      <option value="10">11 cuotas</option>
+      <option value="11">12 cuotas</option>
+      <option value="12">24 cuotas</option>
+      <option value="13">36 cuotas</option>
+    </select>
+       <div>
+         <p class="validación_input-error"> Este campo es obligatorio</p>
+     </div>
+
+      <!-- Grupo Flexbox Fecha de Vencimiento Mes y código seguridad-->
+     <div class="flexbox">
+     <div class="grupoVencimiento">
+       <label for="mesSeleccionado" Class= "mesSeleccionado">Fecha de Vencimiento</label>
+       <div class="flexbox">
+         <div class="mesSeleccionado">
+<select name="mes" id="mesSeleccionado"><option disabled selected="">Mes</option></select>
+<i class="fas fa-angle-down"></i>
+        <!-- Selección del año --->
+      <div class="grupoVencimiento">
+<select name="year" id="yearSeleccionado"><option disabled selected="">Año</option></select>
+<i class="fas fa-angle-down"></i>
+        </div>
+      
+<!-- Código de Seguridad  -->
+<div class="grupoSeguridad">
+       <label for="codigoSeguridad"Class= "codigoSeguridad"">Código de Seguridad</label>
+       <input type="text" id= "codigoSeguridad" placeholder="CVV" minlength="3" maxlength="3"> 
+       </div>
+       <div>
+         <p class="Código-seguridad_input-error">Este campo es obligatorio</p>
+     </div>
+    
+<!-- Completar compra -->
+<div class="btnComprar">
+    <button type="submit" class="buttonComprar">Completar compra</button>
+    <i class="completar compra fas fa-cart-arrow-down"></i>
+</div>
+    </form>
+     </main>
+
+<!--- Información de Seguridad --->
+<form action="informacionSeguridad">
+    <div class="informacionSeguridad">
+      <br>
+       <i class="fas fa-info-circle"></i>
+       <p>Tus tarjetas se guardan de forma segura para que puedas reutilizar el método de pago.</p>
+     </div>
+    <div id="beneficios">
+      <h2>¿Qué estás comprando?</h2>
+      <div>
+        <i class="far fa-smile-beam"></i>
+        <p>Acceso ilimitado a los cursos que nunca expira para verlos todas las veces que desees.</p>
+      </div>
+      <div>
+        <i class="fas fa-desktop"></i>
+        <p>Acceso indefinido a las diferentes unidades del curso, lecciones, textos educativos y recursos adicionales.</p>
+      </div>
+      <div>
+        <i class="fas fa-users"></i>
+        <p>Acceso a la comunidad exclusiva de cursos donde podrás intercambiar experiencias con los docentes y otros estudiantes.</p>
+      </div>
+     
+      <div>
+        <i class="fas fa-question-circle"></i>
+        <p>¿Necesitas ayuda? visita nuetra página o ponte en contacto con nosotros.</p>
+      </div>
+    </form>
+    </main>
+   <footer>
+     <h4>KURSIFIK-TE</h4>
+     <h4>Condiciones de uso</h4>
+     <h4>Políticas de privacidad</h4>
+     <h4>Política de cookies</h4>
+   </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
+  <li>
+    
 </html>
