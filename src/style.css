@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #F26666;
+  padding-top: 10px;
+}
+
+#left {
+  display: block;
+  text-align: center;
+  font-family: 'Londrina Outline', cursive;
+  color: aliceblue;
+}
+
+#shopIcon {
+  display: block;
+  float: right;
+  margin-top: -25px;
+  padding-right: 55px;
+}
+body{
+
+ font-family:  Roboto, sans-serif;
+ background: #E5E5E5; 
+
+}
+main{
+  max-width: 500px;
+  width: 98% ;
+  margin: auto;
+  padding: 40px;
+}
+ /*------ Formulario tarjeta -----*/
+.validacionTarjeta {
+    background: rgb(211, 241, 243);
+    width: 80%;
+    max-width: 380px;
+    padding: 2% 8% 5% 2%;
+  border-radius: 20px;
+  }
+  .validacionTarjeta label {
+    display: block;
+    color: rgb(59, 4, 22);
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .validacionTarjeta input,
+  .validacionTarjeta select,
+  .buttonComprar {
+    border: 2px solid rgb(205, 218, 233);
+    font-size: 18 px;
+    height: 30px;
+    width: 90%;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    border-radius: 5px;
+  }
+  .validacionTarjeta input:hover,
+  .validacionTarjeta select:hover {
+    border: 2px solid rgb(121, 61, 79);
+  }
+  .validacionTarjeta input:focus,
+  .validacionTarjeta select:focus {
+    outline: rgb(4,4,4);
+    box-shadow:3px 7px 10px - 5px rgba(1, 6, 12, 0.3);
+  }
+  .validacionTarjeta input {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .flexbox {
+  display: flex;
+  justify-content: space-between;
+  
+  .grupoVencimiento {
+    width: 50%;
+  }
+  .mesSelecionado {
+    width: 50%;
+  }
+  .grupoSeguridad {
+    min-width: 50%;
+  }
