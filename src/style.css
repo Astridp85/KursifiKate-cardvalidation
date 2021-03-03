@@ -7,12 +7,19 @@
 }
 
 header {
-  height: 50px;
+  height: 90px;
   width: 100%;
-  background-color: #F26666;
-  padding-top: 10px;
+  background-image: linear-gradient(to right bottom, #307e9c, #3a89a9, #4393b7, #4d9ec4, #57a9d2, #60acd4, #68afd5, #70b2d7, #77aecd, #7dabc3, #83a7b9, #89a3b0);
 }
-
+header h1{
+  font-size: 70px;
+   
+}
+header #gif iframe{
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+}
 #left {
   display: block;
   text-align: center;
@@ -23,13 +30,13 @@ header {
 #shopIcon {
   display: block;
   float: right;
-  margin-top: -25px;
-  padding-right: 55px;
+  margin-top: -45px;
+  padding-right: 90px;
+
 }
 body{
-
  font-family:  Roboto, sans-serif;
- background: #E5E5E5; 
+ background: #D2D9D8; 
 
 }
 main{
@@ -40,7 +47,7 @@ main{
 }
  /*------ Formulario tarjeta -----*/
 .validacionTarjeta {
-    background: rgb(211, 241, 243);
+  background-image: linear-gradient(to right top, #fc6ebe, #f76fc9, #f071d3, #e874de, #de77e8, #d074ea, #c271ec, #b26fee, #9b66e8, #835ee2, #6856dc, #474fd5);
     width: 80%;
     max-width: 380px;
     padding: 2% 8% 5% 2%;
@@ -63,7 +70,7 @@ main{
     transition: .3s ease all;
     border-radius: 5px;
   }
-  .validacionTarjeta input:hover,
+  .validacionTarjeta input:hover
   .validacionTarjeta select:hover {
     border: 2px solid rgb(121, 61, 79);
   }
@@ -78,7 +85,7 @@ main{
   }
   .flexbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; }
   
   .grupoVencimiento {
     width: 50%;
@@ -88,4 +95,43 @@ main{
   }
   .grupoSeguridad {
     min-width: 50%;
+  }
+  main #beneficios {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: right;
+  }
+  
+  main #beneficios h2 {
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+  }
+  
+  main #beneficios div {
+    font-family: 'Padauk', sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 60%;
+    height: 30px;
+    background-image: linear-gradient(to right bottom, #307e9c, #3a89a9, #4393b7, #4d9ec4, #57a9d2, #60acd4, #68afd5, #70b2d7, #77aecd, #7dabc3, #83a7b9, #89a3b0);
+    padding-top: 10px;
+  }
+  
+  footer #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+    font-family: 'Padauk', sans-serif;
+    font-size: 18px;
   }
