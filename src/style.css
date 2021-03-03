@@ -11,29 +11,30 @@ header {
   width: 100%;
   background-image: linear-gradient(to right bottom, #307e9c, #3a89a9, #4393b7, #4d9ec4, #57a9d2, #60acd4, #68afd5, #70b2d7, #77aecd, #7dabc3, #83a7b9, #89a3b0);
 }
-header h1{
-  font-size: 70px;
-   
-}
+
 header #gif iframe{
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 100px;
+  margin-left: 500px;
+  transform: translate(-95px,-90px);
 }
-#left {
+header #left {
+  font-size: 40px;
   display: block;
-  text-align: center;
+  margin-left: 500px;
   font-family: 'Londrina Outline', cursive;
   color: aliceblue;
 }
 
-#shopIcon {
+header #shopIcon {
   display: block;
   float: right;
-  margin-top: -45px;
+  margin-top: -150px;
   padding-right: 90px;
-
-}
+  font-size: 30px;
+  color: aliceblue;
+  }
 body{
  font-family:  Roboto, sans-serif;
  background: #D2D9D8; 
@@ -45,14 +46,25 @@ main{
   margin: auto;
   padding: 40px;
 }
- /*------ Formulario tarjeta -----*/
+main form{
+  margin-left: -400px;
+  background-image: linear-gradient(to right top, #fc6ebe, #f76fc9, #f071d3, #e874de, #de77e8, #d074ea, #c271ec, #b26fee, #9b66e8, #835ee2, #6856dc, #474fd5);
+    width: 600px;
+    padding: 2% 8% 5% 2%;
+  border-radius: 20px;
+}
+main section .informacionSeguridad{
+  display: block;
+  margin-left: -400px;
+}
+ /*------ Formulario tarjeta -----
 .validacionTarjeta {
   background-image: linear-gradient(to right top, #fc6ebe, #f76fc9, #f071d3, #e874de, #de77e8, #d074ea, #c271ec, #b26fee, #9b66e8, #835ee2, #6856dc, #474fd5);
     width: 80%;
     max-width: 380px;
     padding: 2% 8% 5% 2%;
   border-radius: 20px;
-  }
+  }*/
   .validacionTarjeta label {
     display: block;
     color: rgb(59, 4, 22);
@@ -82,6 +94,13 @@ main{
   .validacionTarjeta input {
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-family: FontAwesome;
+  }
+  main form #error{
+    color: #F2E205;
+  }
+  main form b{
+    color: #F2E205;
   }
   .flexbox {
   display: flex;
@@ -97,23 +116,45 @@ main{
     min-width: 50%;
   }
   main #beneficios {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     float: right;
+    transform: translate(350px,-480px);
   }
-  
+  main section .informacionSeguridad #informacion{
+    font-size: 30px;
+    color: #D98E04;
+    margin-top: 25px;
+  }
   main #beneficios h2 {
     font-family: 'Padauk', sans-serif;
     text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
   }
   
-  main #beneficios div {
+  main #beneficios div p {
     font-family: 'Padauk', sans-serif;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
   }
+  main #beneficios div p #carita{
+   font-size: 30px; 
+   color: #D98E04;
+  }
+  main #beneficios div p #computador{
+    font-size: 30px; 
+    color: #D98E04;
+   }
+   main #beneficios div p #usuarios{
+    font-size: 30px; 
+    color: #D98E04;
+   }
+   main #beneficios div p #pregunta{
+    font-size: 30px; 
+    color: #D98E04;
+   }
   
   footer {
     margin-top: 60%;

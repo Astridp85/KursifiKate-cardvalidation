@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title><KURSIFIK-TE</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <header>
     <div id="left">
@@ -21,12 +22,11 @@
         <div class="grupoTarjeta" id="grupoTarjeta">
           <label for="inputNumero"class="inputNumero">Número de Tarjeta</label>
           </br>
-          <i class="fas fa-credit-card"></i>
-          <input type="text" class="inputNumero" id="inputNumero" name="números" required="" pattern="[0-9]+"placeholder="1234 5678 9012 3456"  maxlength="19" autocomplete="off">
-          </br>
-          <div>
+          <input type="text" class="inputNumero" id="inputNumero" name="números" required=""  placeholder='&#xf09d;'  maxlength="19" autocomplete="off">
+          </br> 
+           <div>
             <p class="validacióntarjeta_input-error">Sólo números de 16 dígitos  no acepta letras ni caracteres especiales</p>
-            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Tarjeta no válida</p>
+            <p><i id="error" class="fas fa-exclamation-triangle"></i><b> Error:</b> Tarjeta no válida</p>
           </div>
         </div>
 
@@ -91,35 +91,29 @@
     
         <!-- Completar compra -->
         <div class="btnComprar">
-          <button type="submit" class="buttonComprar">Completar compra</button>
-          <i class="completar compra fas fa-cart-arrow-down"></i>
+          <button type="submit" class="buttonComprar"><i class="completar compra fas fa-cart-arrow-down"></i> Completar compra</button>
         </div>
       </form>
 
         <!--- Información de Seguridad --->
       <section>
-        <div class="informacionSeguridad">
-          <i class="fas fa-info-circle"></i>
-          <p>Tus tarjetas se guardan de forma segura para que puedas reutilizar el método de pago.</p>
+        <div class="informacionSeguridad">  
+          <p><i id="informacion" class="fas fa-info-circle"></i> Tus tarjetas se guardan de forma segura para que puedas reutilizar el método de pago.</p>
         </div>
         <div id="beneficios">
           <h2>¿Qué estás comprando?</h2>
-        <div>
-          <i class="far fa-smile-beam"></i>
-          <p>Acceso ilimitado a los cursos que nunca expira para verlos todas las veces que desees.</p>
-        </div>
-        <div>
-          <i class="fas fa-desktop"></i>
-          <p>Acceso indefinido a las diferentes unidades del curso, lecciones, textos educativos y recursos adicionales.</p>
-        </div>
-        <div>
-          <i class="fas fa-users"></i>
-          <p>Acceso a la comunidad exclusiva de cursos donde podrás intercambiar experiencias con los docentes y otros estudiantes.</p>
-        </div>
-  
-        <div>
-          <i class="fas fa-question-circle"></i>
-          <p>¿Necesitas ayuda? visita nuetra página o ponte en contacto con nosotros.</p>
+          <div>
+            <p><i id="carita" class="far fa-smile-beam"></i> Acceso ilimitado a los cursos que nunca expira para verlos todas las veces que desees.</p>
+          </div>
+          <div>
+            <p><i id="computador" class="fas fa-desktop"></i> Acceso indefinido a las diferentes unidades del curso, lecciones, textos educativos y recursos adicionales.</p>
+          </div>
+          <div>
+            <p><i id="usuarios" class="fas fa-users"></i> Acceso a la comunidad exclusiva de cursos donde podrás intercambiar experiencias con los docentes y otros estudiantes.</p>
+          </div>
+          <div>
+            <p><i id="pregunta" class="fas fa-question-circle"></i> ¿Necesitas ayuda? visita nuetra página o ponte en contacto con nosotros.</p>
+          </div>
         </div>
       </section>
     </main>
