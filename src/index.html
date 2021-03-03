@@ -18,10 +18,10 @@
     <form action=""class="validacionTarjeta" id="validacionTarjeta">
       <!--Número de tarjeta -->
       <div class="grupoTarjeta" id="grupoTarjeta">
-      <label for="inputNumero"Class="inputNumero">Número de Tarjeta</label>
+      <label for="inputNumero"class="inputNumero">Número de Tarjeta</label>
       </br>
         <i class="fas fa-credit-card"></i>
-      <input type="text" class="inputNumero" id="inputNumero" name="números" required="" pattern="[0-9]+"placeholder="1234 5678 9012 3456" minlength="16" maxlength="16" autocomplete="off">
+      <input type="text" class="inputNumero" id="inputNumero" name="números" required="" pattern="[0-9]+"placeholder="1234 5678 9012 3456"  maxlength="19" autocomplete="off">
       </br>
       <div>
          <p class="validacióntarjeta_input-error">Sólo números de 16 dígitos  no acepta letras ni caracteres especiales</p>
@@ -30,7 +30,7 @@
 
      <!-- Nombre y Apellido  -->
      <div class="grupoTarjeta" id="grupoTarjeta"> 
-       <label for="inputNombre" Class="inputNombre"">Nombre y Apellido que figura en su tarjeta</label>
+       <label for="inputNombre" class="inputNombre">Nombre y Apellido que figura en su tarjeta</label>
        <input type="text" class="inputNombre"pattern="[a-zA-Z]+ name="nombre_apellido" id="inputNombre" placeholder="Carlos Perez" autocomplete="off">
        <div>
          <p class="nombre y apellido_input-error">Sólo letras no acepta números ni caracteres especiales</p>
@@ -38,7 +38,7 @@
      
     <!--Número de Cuotas -->
      <div class="grupoCuotas" id="grupoCuotas"> 
-       <label for="inputCuotas" Class="inputCuotas">Número de Cuotas</label>
+       <label for="inputCuotas" class="inputCuotas">Número de Cuotas</label>
        <div class="selectCuotas"> 
        <select name="selectCuotas"class="selectCuotas">
       <option value="1">Total</option>
@@ -63,20 +63,20 @@
       <!-- Grupo Flexbox Fecha de Vencimiento Mes y código seguridad-->
      <div class="flexbox">
      <div class="grupoVencimiento">
-       <label for="mesSeleccionado" Class= "mesSeleccionado">Fecha de Vencimiento</label>
-       <div class="flexbox">
-         <div class="mesSeleccionado">
+      <label for="mesSeleccionado" class= "mesSeleccionado">Fecha de Vencimiento</label>
+      <div class="flexbox">
+        <div class="mesSeleccionado">
 <select name="mes" id="mesSeleccionado"><option disabled selected="">Mes</option></select>
 <i class="fas fa-angle-down"></i>
-        <!-- Selección del año --->
-      <div class="grupoVencimiento">
+       <!-- Selección del año --->
+     <div class="grupoVencimiento">
 <select name="year" id="yearSeleccionado"><option disabled selected="">Año</option></select>
 <i class="fas fa-angle-down"></i>
-        </div>
+       </div>
       
 <!-- Código de Seguridad  -->
 <div class="grupoSeguridad">
-       <label for="codigoSeguridad"Class= "codigoSeguridad"">Código de Seguridad</label>
+       <label for="codigoSeguridad"class= "codigoSeguridad"">Código de Seguridad</label>
        <input type="text" id= "codigoSeguridad" placeholder="CVV" minlength="3" maxlength="3"> 
        </div>
        <div>
@@ -89,10 +89,8 @@
     <i class="completar compra fas fa-cart-arrow-down"></i>
 </div>
     </form>
-     </main>
 
 <!--- Información de Seguridad --->
-<form action="informacionSeguridad">
     <div class="informacionSeguridad">
       <br>
        <i class="fas fa-info-circle"></i>
@@ -117,7 +115,6 @@
         <i class="fas fa-question-circle"></i>
         <p>¿Necesitas ayuda? visita nuetra página o ponte en contacto con nosotros.</p>
       </div>
-    </form>
     </main>
    <footer>
      <h4>KURSIFIK-TE</h4>
@@ -126,8 +123,7 @@
      <h4>Política de cookies</h4>
    </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
-  <li>
     
 </html>
