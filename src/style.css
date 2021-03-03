@@ -70,7 +70,7 @@ main{
     transition: .3s ease all;
     border-radius: 5px;
   }
-  .validacionTarjeta input:hover
+  .validacionTarjeta input:hover,
   .validacionTarjeta select:hover {
     border: 2px solid rgb(121, 61, 79);
   }
@@ -98,13 +98,8 @@ main{
   }
   main #beneficios {
     margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     float: right;
   }
   
