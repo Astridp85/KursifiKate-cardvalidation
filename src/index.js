@@ -1,4 +1,6 @@
+import validator from "./validator.js"
 const formulario = document.getElementById('validacionTarjeta');
+
 // * Select mes dinámico.
 for (let mes = 1; mes <= 12; mes ++ ){
     let optionMes = document.createElement ("option");
@@ -15,14 +17,27 @@ for (let year = actualYear; year <= actualYear + 10; year ++){
     formulario.yearSeleccionado.appendChild (optionYear);
 }
 // * número de tarjeta
-formulario.inputNumero.addEventListener("keyup", (e) => {
-    let numberInput = e.target.value;
-    //* sin espacios en blanco, letras y espacios cada cuatro números y eliminando el último espaciado 
-    formulario.inputNumero.value = numberInput
-    .replace(/\s/g, '').replace(/\D/g, '').replace(/([0-9]{4})/g, '$1 ')
-  .trim ();
+formulario.inputNumero1.addEventListener("keyup", (e) => {
+let numberInput = e.target.value;
+//* sin espacios en blanco, letras y eliminando el último espaciado 
+formulario.inputNumero1.value = numberInput
+.replace(/\s/g, '').replace(/\D/g, '')
+
+.trim (); // Elimina el último espacio
 });
-// * tarjeta no valida
 
+// * Validación tarjeta
+//console.log(validator.isValid("12667798654"));
+const saltarInput = document.getElementById ("inputNombre");
+saltarInput.addEventListener("click", evaluarTarjeta);
+function evaluarTarjeta (){
+var creditCardNumber = document.getElementById ("inputNumero1").value;
+if (validator.isValid(creditCardNumber) == true) {
+    //alert ("tarjeta válida");
+    confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' es válida.'  +  "Desea continuar con su compra");
+}else {
+    //alert ("tarjeta no valida");
+ confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' No es válida.'  +  "Desea continuar con su compra");
 
- 
+}
+}

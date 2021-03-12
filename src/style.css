@@ -34,37 +34,98 @@ header #shopIcon {
   padding-right: 90px;
   font-size: 30px;
   color: aliceblue;
+  align-self: center;
   }
 body{
  font-family:  Roboto, sans-serif;
  background: #D2D9D8; 
-
 }
 main{
   max-width: 500px;
   width: 98% ;
   margin: auto;
   padding: 40px;
+  height: 200px;
 }
-main form{
+
+main #cursos #intro{
+  width: 100%
+}
+main #cursos #intro img{
+  width: 900px;
+  height: 200px;
+  margin-left: -190px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+main #cursos #intro h1{
+  font-family: 'Padauk', sans-serif;
+  font-size: 40px;
+  width: 600px;
+  color: aliceblue;
+  transform: translate(50px,-127px);
+}
+main #cursos #cursosContenedor{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-left: -230px;
+
+}
+main #cursos #cursosContenedor div{
+  width: 300px;
+  height: 600px;
+  background-color:aliceblue;
+  border-radius: 40px;
+}
+main #cursos #cursosContenedor div img{
+  width: 90%;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+main #cursos #cursosContenedor div h3{
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 22px;
+}
+main #cursos #cursosContenedor div p{
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 20px;
+  opacity: 70%;
+  font-size: 15px;
+}
+main #cursos #cursosContenedor div .descuento{
+  color: #BF0B3B;
+}
+main #cursos #cursosContenedor div p span{
+  color: #BF0B3B;
+  text-decoration: line-through;
+}
+main #cursos #cursosContenedor div button{
+  width: 200px;
+  height: 30px;
+  margin-left: 45px;
+  margin-top: 40px;
+  background-color: #9b66e8;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main #compra form{
   margin-left: -400px;
   background-image: linear-gradient(to right top, #fc6ebe, #f76fc9, #f071d3, #e874de, #de77e8, #d074ea, #c271ec, #b26fee, #9b66e8, #835ee2, #6856dc, #474fd5);
     width: 600px;
     padding: 2% 8% 5% 2%;
   border-radius: 20px;
 }
-main section .informacionSeguridad{
+main #compra section .informacionSeguridad{
   display: block;
   margin-left: -400px;
 }
- /*------ Formulario tarjeta -----
-.validacionTarjeta {
-  background-image: linear-gradient(to right top, #fc6ebe, #f76fc9, #f071d3, #e874de, #de77e8, #d074ea, #c271ec, #b26fee, #9b66e8, #835ee2, #6856dc, #474fd5);
-    width: 80%;
-    max-width: 380px;
-    padding: 2% 8% 5% 2%;
-  border-radius: 20px;
-  }*/
   .validacionTarjeta label {
     display: block;
     color: rgb(59, 4, 22);
@@ -96,10 +157,13 @@ main section .informacionSeguridad{
     text-transform: uppercase;
     font-family: FontAwesome;
   }
-  main form #error{
+  main #compra form #error{
     color: #F2E205;
   }
-  main form b{
+  main #compra form #correcto{
+    color: #F2E205;
+  }
+  main #compra form b{
     color: #F2E205;
   }
   .flexbox {
@@ -115,43 +179,53 @@ main section .informacionSeguridad{
   .grupoSeguridad {
     min-width: 50%;
   }
-  main #beneficios {
+  main #compra #beneficios {
     display: flex;
     flex-direction: column;
     float: right;
     transform: translate(350px,-480px);
   }
-  main section .informacionSeguridad #informacion{
+  #gif2 iframe {
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    margin-left: 660px;
+    transform: translate(-150px,-150px);
+    position: absolute;
+    top: 250px;
+    
+  }  
+  main #compra section .informacionSeguridad #informacion{
     font-size: 30px;
     color: #D98E04;
     margin-top: 25px;
   }
-  main #beneficios h2 {
+  main #compra #beneficios h2 {
     font-family: 'Padauk', sans-serif;
     text-align: center;
     font-size: 35px;
     margin-bottom: 20px;
   }
   
-  main #beneficios div p {
+  main #compra #beneficios div p {
     font-family: 'Padauk', sans-serif;
     margin-top: 30px;
     font-size: 17px;
     text-align: center;
   }
-  main #beneficios div p #carita{
+  main #compra #beneficios div p #carita{
    font-size: 30px; 
    color: #D98E04;
   }
-  main #beneficios div p #computador{
+  main #compra #beneficios div p #computador{
     font-size: 30px; 
     color: #D98E04;
    }
-   main #beneficios div p #usuarios{
+   main #compra #beneficios div p #usuarios{
     font-size: 30px; 
     color: #D98E04;
    }
-   main #beneficios div p #pregunta{
+   main #compra #beneficios div p #pregunta{
     font-size: 30px; 
     color: #D98E04;
    }
