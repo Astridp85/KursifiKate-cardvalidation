@@ -35,7 +35,8 @@ header #shopIcon {
   font-size: 30px;
   color: aliceblue;
   align-self: center;
-  }
+}
+
 body{
  font-family:  Roboto, sans-serif;
  background: #D2D9D8; 
@@ -46,6 +47,13 @@ main{
   margin: auto;
   padding: 40px;
   height: 200px;
+}
+main #compra{
+  display: none;
+}
+
+main #cursos{
+  display: block;
 }
 
 main #cursos #intro{

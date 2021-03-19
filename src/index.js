@@ -34,10 +34,34 @@ function evaluarTarjeta (){
 var creditCardNumber = document.getElementById ("inputNumero1").value;
 if (validator.isValid(creditCardNumber) == true) {
     //alert ("tarjeta válida");
-    confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' es válida.'  +  "Desea continuar con su compra");
+    confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' es válida.'  +  " Desea continuar con su compra");
 }else {
     //alert ("tarjeta no valida");
- confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' No es válida.'  +  "Desea continuar con su compra");
+ confirm('su tarjeta '+ validator.maskify(creditCardNumber) + ' No es válida.'  +  " Desea continuar con su compra");
 
 }
 }
+//*Mostrar y ocultar formulario
+ const compraOff= document.getElementById("btn4"); 
+compraOff.addEventListener("click",ocultar);
+function ocultar(){
+    document.getElementById("compra").style.display="none";
+    document.getElementById("cursos").style.display="block";
+}
+const compraIn= document.getElementById("carrito"); 
+compraIn.addEventListener("click", mostrar);
+function mostrar(){
+    document.getElementById("compra").style.display="block";
+    document.getElementById("cursos").style.display="none";
+}
+/*var compraIn= element.getElementsByClassName('btn');
+compraIn.addEventListener("click", mostrar);
+function mostrar(){
+    document.getElementById("compra").style.display="block";
+    document.getElementById("cursos").style.display="none";
+}*/
+
+
+
+
+
