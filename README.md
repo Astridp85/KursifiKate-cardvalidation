@@ -33,13 +33,13 @@ Para el desarrollo de está aplicación web se realizaron una serie de prototipo
 
 ### Diseño del prototipo de baja fidelidad
 
-![Prototipo de baja fidelidad](src\images\prototipopapel1.png)
-![Prototipo de baja fidelidad](src\images\prototipopapel.png)
+![Prototipo de baja fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipopapel1.png)
+![Prototipo de baja fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipopapel.png)
 
 ### Diseño del prototipo de alta fidelidad
 
 ![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipo1.png)
-![Prototipo de alta fidelidad](src\images\prototipo2.png)
+![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipo2.png)
 
 ## Feedback
 
@@ -91,5 +91,5 @@ En un principio, cuando se mostró el prototipo de alta fidelidad, sugirieron qu
 
 ## 6. Resultado Final
 
-![Prototipo de alta fidelidad](src\images\prototipofinal1.png)
-![Prototipo de alta fidelidad](src\images\prototipofinal.png)
+![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipofinal1.png)
+![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipofinal.png)
