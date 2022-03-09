@@ -38,7 +38,7 @@ Para el desarrollo de está aplicación web se realizaron una serie de prototipo
 
 ### Diseño del prototipo de alta fidelidad
 
-![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipo1.png)
+![prototipo1](https://user-images.githubusercontent.com/76055558/157483254-c2c5918d-d7cb-40de-ac9e-821bb9b52042.png)
 ![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipo2.png)
 
 ## Feedback
