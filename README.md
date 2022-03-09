@@ -33,7 +33,7 @@ Para el desarrollo de está aplicación web se realizaron una serie de prototipo
 
 ### Diseño del prototipo de baja fidelidad
 
-![Prototipo de baja fidelidad](https://github.com/Astridp85/KursifiKate-cardvalidation/issues/1#issue-1164143768)
+![prototipopapel1](https://user-images.githubusercontent.com/76055558/157481559-61826529-5d28-4ef1-b2a6-6625519bb84e.png)
 ![Prototipo de baja fidelidad](https://github.com/Astridp85/KursifiKate-cardvalidation/issues/2#issue-1164144430)
 
 ### Diseño del prototipo de alta fidelidad
