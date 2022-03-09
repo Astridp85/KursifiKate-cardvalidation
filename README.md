@@ -91,5 +91,5 @@ En un principio, cuando se mostró el prototipo de alta fidelidad, sugirieron qu
 
 ## 6. Resultado Final
 
-![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipofinal1.png)
+![prototipofinal1](https://user-images.githubusercontent.com/76055558/157483875-a5b4383d-eb24-4efe-8ec7-5df9c4da401a.png)
 ![Prototipo de alta fidelidad](https://github.com/Astridp85/BOG002-card-validation/blob/main/src/images/prototipofinal.png)
